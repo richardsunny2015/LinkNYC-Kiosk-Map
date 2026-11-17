@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="31" viewBox="0 0 88 31">
+<title>Map Icons Collection</title>
+<!-- Map Icons Collection badge, https://mapicons.mapsmarker.com - CC BY-SA 3.0. Redrawn as SVG from miclogo-88x31.gif. -->
+<rect x="0.5" y="0.5" width="87" height="30" fill="#fff" stroke="#545454"/>
+<g fill="none" stroke="#545454" stroke-width="0.8">
+<path d="M2.5 14V8.5H7.5Q8.5 8.5 8.5 9.5V14M5.5 8.5V14"/>
+<path d="M14.5 8.5H11.5Q10.5 8.5 10.5 9.5V12.5Q10.5 13.5 11.5 13.5H14.5M14.5 8V14"/>
+<path d="M16.5 16V8.5H19.5Q20.5 8.5 20.5 9.5V12.5Q20.5 13.5 19.5 13.5H16.5"/>
+</g>
+<path id="tile" fill="#5781fc" d="M24.8 5H32.2Q34 5 34 6.8V14.2Q34 16 32.2 16H31L28.5 18.9L26 16H24.8Q23 16 23 14.2V6.8Q23 5 24.8 5Z"/>
+<path fill="#e14e9d" transform="translate(13)" d="M24.8 5H32.2Q34 5 34 6.8V14.2Q34 16 32.2 16H31L28.5 18.9L26 16H24.8Q23 16 23 14.2V6.8Q23 5 24.8 5Z"/>
+<path fill="#ef9e40" transform="translate(26)" d="M24.8 5H32.2Q34 5 34 6.8V14.2Q34 16 32.2 16H31L28.5 18.9L26 16H24.8Q23 16 23 14.2V6.8Q23 5 24.8 5Z"/>
+<path fill="#7e55fc" transform="translate(39)" d="M24.8 5H32.2Q34 5 34 6.8V14.2Q34 16 32.2 16H31L28.5 18.9L26 16H24.8Q23 16 23 14.2V6.8Q23 5 24.8 5Z"/>
+<path fill="#00e13c" transform="translate(52)" d="M24.8 5H32.2Q34 5 34 6.8V14.2Q34 16 32.2 16H31L28.5 18.9L26 16H24.8Q23 16 23 14.2V6.8Q23 5 24.8 5Z"/>
+<g fill="#fff">
+<rect x="27.55" y="5.9" width="1.9" height="1.7"/>
+<rect x="27.55" y="8.9" width="1.9" height="5.6"/>
+</g>
+<g fill="none" stroke="#fff" stroke-width="1.9">
+<path d="M43.9 9.2A3 2.9 0 1 0 43.9 12.6"/>
+<ellipse cx="54.5" cy="10.9" rx="3" ry="2.9"/>
+<path d="M64.9 14.6V7.6M64.9 10.5Q64.9 8.55 67.35 8.55Q69.8 8.55 69.8 10.5V14.6"/>
+<path stroke-width="1.35" d="M82.5 9.4C82.2 8.7 81.5 8.35 80.7 8.35C79.9 8.35 79.45 8.8 79.45 9.5C79.45 10.3 80.1 10.6 80.9 10.85C81.9 11.15 82.55 11.6 82.55 12.5C82.55 13.4 81.8 13.95 80.7 13.95C79.8 13.95 79.1 13.6 78.7 12.9"/>
+</g>
+<g fill="none" stroke="#545454" stroke-width="0.65">
+<path d="M26.4 23.4A2.2 2.45 0 1 0 26.5 26.6"/>
+<ellipse cx="30.5" cy="25" rx="2" ry="2.5"/>
+<path d="M34.5 20V28M36.5 20V28"/>
+<path d="M38.4 25.3H42.3A1.95 2.5 0 1 0 41.9 26.6"/>
+<path d="M47.9 23.4A2.1 2.45 0 1 0 48 26.6"/>
+<path d="M50.5 20V28M49 22.8H51.8M52.75 20V21.4M52.75 22.6V28"/>
+<ellipse cx="56.5" cy="25" rx="2" ry="2.5"/>
+<path d="M60.5 22V28M60.5 24.6Q60.5 22.5 62.2 22.5Q63.9 22.5 63.9 24.6V28"/>
+</g>
+</svg>

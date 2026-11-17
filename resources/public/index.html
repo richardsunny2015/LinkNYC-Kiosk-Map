@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@2.0.0-beta.4/dist/leaflet.css">
+    <script type="importmap">
+		{
+            "imports": {
+                "leaflet": "https://cdn.jsdelivr.net/npm/leaflet@2.0.0-beta.4/dist/leaflet.js"
+            }
+        }
+	</script>
+</head>
+
+<body>
+    <div>
+        <div id="map" style="height: 100vh"></div>
+        <image style="position:absolute; left: 20px; top: 95vh;" src="/images/map-icons-logo.svg" width="88"></image>
+    </div>
+    <!-- <script type="module">
+		import {LeafletMap, TileLayer} from 'leaflet';
+		// the map code goes here
+	</script> -->
+    <script type="module" src="/script.js"></script>
+</body>
+
+</html>
