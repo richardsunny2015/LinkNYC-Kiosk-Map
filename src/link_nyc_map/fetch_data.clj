@@ -1,8 +1,7 @@
 (ns link-nyc-map.fetch-data
   (:require [clj-http.client :as http]
-            [tea-time.core :as tt]))
-
-;; TODOS add log info
+            [tea-time.core :as tt]
+            [taoensso.timbre :as log]))
 
 (def ^:const fifteen-minutes (* 15 60))
 
@@ -13,12 +12,12 @@
                    {:query-params {:$limit 3000}})
          :body
          (spit "resources/json/links.json"))
-    (println "Successfully fetched links data")
+    (log/info "Successfully fetched links data")
     (catch Exception e
-      (println "Failed to fetch updated data"
-               (.getMessage e)))))
+      (log/error "Failed to fetch updated data"
+                 (.getMessage e)))))
 
-(println "Scheduling task for every 15 minutes")
+(log/info "Scheduling task for every 15 minutes")
 
 (tt/start!)
 
@@ -26,7 +25,7 @@
   (tt/every! fifteen-minutes
              fifteen-minutes
              (bound-fn []
-               (println "Fetching scheduled data")
+               (log/info "Fetching scheduled data")
                (fetch))))
 
 (defn get-handler

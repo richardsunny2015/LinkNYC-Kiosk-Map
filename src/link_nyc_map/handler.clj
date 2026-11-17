@@ -2,7 +2,8 @@
   (:require [compojure.core :refer :all]
             [compojure.route :as route]
             [link-nyc-map.fetch-data :as fetch-data]
-            [ring.middleware.defaults :refer [wrap-defaults site-defaults]]))
+            [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
+            [taoensso.timbre :as log]))
 
 (defroutes app-routes
   (route/files "/" {:root "resources/public"})
@@ -11,9 +12,9 @@
 
 (defn- create-app
   []
-  (println "Fetching initial data")
+  (log/info "Fetching initial data")
   (fetch-data/fetch)
-  (println "Finished fetching data. Starting app.")
+  (log/info "Finished fetching data. Starting app.")
   (wrap-defaults app-routes site-defaults))
 
 (def app
