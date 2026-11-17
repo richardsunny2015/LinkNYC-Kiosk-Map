@@ -4,7 +4,7 @@
 
 ;; TODOS add log info
 
-(def ^:const fifteen-minutes (* 15 2 60))
+(def ^:const fifteen-minutes (* 15 60))
 
 (defn fetch
   []
