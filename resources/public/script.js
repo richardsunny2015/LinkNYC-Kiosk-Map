@@ -1,4 +1,4 @@
-import { LeafletMap, TileLayer, Marker, Icon } from 'leaflet';
+import { LeafletMap, TileLayer, Marker, Icon, Circle } from 'leaflet';
 
 const map = new LeafletMap('map').setView([40.7144444444, -74.0002777778], 12);
 
@@ -28,3 +28,14 @@ const data = fetch("/links")
     .then(response => response.json())
     .then(displayLinksOnMap);
 
+map.locate({setView: true, maxZoom: 16})
+
+const onLocationFound = (e) => {
+	const radius = 500;
+
+	new Marker(e.latlng).addTo(map);
+
+	new Circle(e.latlng, {radius}).addTo(map);
+}
+
+map.on('locationfound', onLocationFound);
